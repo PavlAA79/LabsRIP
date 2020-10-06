@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LabsRIP", "LabsRIP\LabsRIP.pyproj", "{83917AFF-9B4F-455B-B874-1D1FCD816E70}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Lab2RIP", "Lab2RIP\Lab2RIP.pyproj", "{ED5EDA14-6B67-4F99-B437-7C52FE8177F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{83917AFF-9B4F-455B-B874-1D1FCD816E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{83917AFF-9B4F-455B-B874-1D1FCD816E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5EDA14-6B67-4F99-B437-7C52FE8177F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5EDA14-6B67-4F99-B437-7C52FE8177F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

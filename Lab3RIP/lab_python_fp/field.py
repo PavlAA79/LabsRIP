@@ -1,7 +1,5 @@
 def field(items, *args):
     assert len(args) > 0
-    i = 0
-    j = 0
     d1 = {}
     for i in range(len(items)):
         for j in range (len(args)):

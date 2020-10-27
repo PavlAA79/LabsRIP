@@ -1,0 +1,59 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>2c3f6b58-8794-4268-9244-9a98f19df5ab</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>process_data.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Lab3RIP</Name>
+    <RootNamespace>Lab3RIP</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="lab_python_fp\cm_timer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab_python_fp\field.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab_python_fp\gen_random.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab_python_fp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="process_data.py" />
+    <Compile Include="lab_python_fp\print_result.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab_python_fp\sort.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lab_python_fp\Unique.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lab_python_fp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

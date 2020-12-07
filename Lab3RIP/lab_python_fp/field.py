@@ -4,7 +4,7 @@ def field(items, *args):
     for i in range(len(items)):
         for j in range (len(args)):
             d1[args[j]] = items[i][args[j]]
-        print(d1)    
+        print(d1)
 
 def main():
     print('Задание 1:')

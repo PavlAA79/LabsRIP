@@ -1,0 +1,18 @@
+﻿table tr:nth-child(odd) {
+    background-color: yellowgreen; /* Цвет фона */
+}
+
+table, tr, td, th {
+    color: black; /* Цвет текста */
+    border: 1px solid black; /* Обводка */
+    border-collapse: collapse; /* Убираем двойную обводку между ячейками */
+}
+
+td, th {
+    padding: 5px; /* Внутренний отступ */
+}
+
+th {
+    font-weight: bold;
+    background-color: yellowgreen; /* Цвет фона */
+}

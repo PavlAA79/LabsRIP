@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Покупка билета</title>
+</head>
+<body>
+    <p>
+        <font size=4>
+            Для покупки билета необходимо заполнить следующую форму:
+        </font>
+    </p>
+    <form action=#>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <p><label for="FIO"><b>ФИО: </b></label><input type="text" name="FIO"></p>
+            <p>
+                <label for="Contacts"><b>Контакты:<br></b></label>
+                <textarea rows="4" cols="60" maxlength="500" name="Contacts"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Направление</legend>
+            <p>
+                <label for="From"><b>Откуда: </b></label>
+                <select name="From">
+                    <option value="a1">Москва</option>
+                    <option value="a2">Санкт-Петербург</option>
+                    <option value="a3">Ростов-на-Дону</option>
+                    <option value="a4">Лондон</option>
+                    <option value="a5">Красноярск</option>
+                    <option value="a6">Париж</option>
+                    <option value="a7">Брянск</option>
+                </select>
+            </p>
+            <p>
+                <label for="Destination"><b>Куда: </b></label>
+                <input type="text" name="Destination" list="datalist1">
+                <datalist id="datalist1">
+                    <option value="b1">Москва</option>
+                    <option value="b2">Санкт-Петербург</option>
+                    <option value="b3">Ростов-на-Дону</option>
+                    <option value="b4">Лондон</option>
+                    <option value="b5">Красноярск</option>
+                    <option value="b6">Париж</option>
+                    <option value="b7">Брянск</option>
+                </datalist>
+            </p>
+            <p><label for="Date1"><b>Дата отправления: </b></label><input type="text" name="Date1"></p>
+            <p><label for="Date2"><b>Дата прибытия: </b></label><input type="text" name="Date2"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Выбор класса обслуживания</legend>
+            <p>
+                <b>Отметьте класс обслуживания:</b><br>
+                <input type="checkbox" name="qual_opt1" value="q1">Бизнес<br>
+                <input type="checkbox" name="qual_opt2" value="q2">Эконом<br>        
+            </p>
+            <p>
+                <label for="Luggage"><b>Багаж:<br></b></label>
+                <input type="radio" name="Luggage" value="r1">С багажом<br>
+                <input type="radio" name="Luggage" value="r2">Без багажа<br>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit">
+            <button type="reset">
+                <img src="images/button.png"
+                     width=30 style="vertical-align: middle"> Сбросить данные формы
+            </button>
+        </p>
+    </form>
+</body>
+</html>

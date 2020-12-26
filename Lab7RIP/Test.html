@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        .wrapper > input:nth-of-type(1):invalid ~ input:nth-of-type(2):invalid ~ input:nth-of-type(3):invalid ~
+        input:nth-of-type(4):invalid ~ input:nth-of-type(5):invalid ~ .progress > .progress-bar {
+            width: 0%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):invalid ~ input:nth-of-type(3):invalid ~
+        input:nth-of-type(4):invalid ~ input:nth-of-type(5):invalid ~ .progress > .progress-bar {
+            width: 33%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):valid ~ input:nth-of-type(3):invalid ~
+        input:nth-of-type(4):invalid ~ input:nth-of-type(5):invalid ~ .progress > .progress-bar {
+            width: 66%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):invalid ~ input:nth-of-type(3):valid ~
+        input:nth-of-type(4):invalid ~ input:nth-of-type(5):invalid ~ .progress > .progress-bar {
+            width: 66%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):valid ~ input:nth-of-type(3):valid ~
+        input:nth-of-type(4):invalid ~ input:nth-of-type(5):invalid ~ .progress > .progress-bar {
+            width: 66%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):valid ~ input:nth-of-type(3):valid ~
+        input:nth-of-type(4):valid ~ input:nth-of-type(5):invalid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):invalid ~ input:nth-of-type(3):valid ~
+        input:nth-of-type(4):invalid ~ input:nth-of-type(5):valid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):valid ~ input:nth-of-type(3):valid ~
+        input:nth-of-type(4):invalid ~ input:nth-of-type(5):valid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):valid ~ input:nth-of-type(3):invalid ~
+        input:nth-of-type(4):valid ~ input:nth-of-type(5):invalid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+
+
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):invalid ~ input:nth-of-type(3):valid ~
+        input:nth-of-type(4):valid ~ input:nth-of-type(5):valid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+
+
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):valid ~ input:nth-of-type(3):invalid ~
+        input:nth-of-type(4):invalid ~ input:nth-of-type(5):valid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):invalid ~ input:nth-of-type(3):valid ~
+        input:nth-of-type(4):valid ~ input:nth-of-type(5):invalid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):valid ~ input:nth-of-type(3):invalid ~
+        input:nth-of-type(4):valid ~ input:nth-of-type(5):valid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+
+        .wrapper > input:nth-of-type(1):valid ~ input:nth-of-type(2):valid ~ input:nth-of-type(3):valid ~
+        input:nth-of-type(4):valid ~ input:nth-of-type(5):valid ~ .progress > .progress-bar {
+            width: 100%;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <p align="center" style="background-color: cornsilk"><font size="5">Тестирование по биологии</font></p>
+    <form class="wrapper" style="width: 900px; margin-left: 20px">
+        <p><b>1.Группы клеток, сходные по строению и функциям, имеющие общее происхождение:</b><br></p>
+        <input type="text" value="" name="name" required>
+
+        <p><b>2.В состав клетки входит:</b><br></p>
+            <input type="checkbox" name="qual_opt1" value="q1" required>Цитоплазма <br>
+            <input type="checkbox" name="qual_opt2" value="q2" required>Микроэлементы<br>
+            <p><b>3.Как называется метод исследования, когда сотрудник лаборатории изучает реакцию растения на полив окрашенным раствором:</b><br></p>
+            <input type="checkbox" name="qual_opt1" value="q1" required>Эксперимент<br>
+            <input type="checkbox" name="qual_opt2" value="q2" required>Описание<br>
+
+            <p><b>Прогресс выполнения:</b><br></p>
+            <div class="progress" style="width: 900px; margin-left: 20px;">
+                <div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+    </form>
+    <p></p>
+    <button class="btn btn-outline-success" type="button" style="width: 300px;margin-left: 640px">
+        Cохранить
+    </button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

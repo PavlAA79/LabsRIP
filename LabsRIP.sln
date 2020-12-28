@@ -73,6 +73,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Lab6RIP", "Lab6RIP\", "{B4E
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "49236"
+		SlnRelativePath = "Lab6RIP\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
@@ -94,10 +95,9 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Lab7RIP", "Lab7RIP\", "{29F
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "49262"
+		SlnRelativePath = "Lab7RIP\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab8RIP", "Lab8RIP", "{4452CAAE-DE1F-4F1E-85FF-B0D58D38B083}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

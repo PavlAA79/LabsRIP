@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Цитрусовые: детали</title>
+    <style>
+    .test{
+      width: 100%;
+      text-align:  center;
+    }
+    .center{
+      display: inline-block
+    }
+    body { 
+      background: url(/static/images/Фон2.png); 
+    }
+    </style>
+</head>
+<body>
+  <p>
+    <button style="height:30px;width:150px;background-color: oldlace">
+      <a href="/">Главная</a>
+    </button>
+  </p>
+  <div class = test>
+  <table class = center border="1" width="70%" cellpadding="5">
+    <tr style="background-color: oldlace">
+     <th>{{NAME}}</th>
+    </tr>
+    <tr style="background-color: white">
+     <td>{{INFO}}</td>
+   </tr>
+   </table>
+  </div>
+  <p align="center">
+  <img src="{{IMG}}" height="300px" width="450px">
+  </p>
+</body>
+</html>

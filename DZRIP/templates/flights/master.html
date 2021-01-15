@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Аэропорт</title>
+    <link href="/static/css/c3.min.css" rel="stylesheet">
+    <style type="text/css">
+        BODY {
+         background: url(/static/images/Фон2.png);
+         background-size: cover; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="alert alert-success" role="alert">
+  <h1 align="center">Аэропорт</h1>
+</div>
+<p>
+    <button type="button" class="btn btn-light"><a href="/admin">Администрирование</a></button>    
+    </p>
+<div class="alert alert-warning" role="alert">
+    <p align="center">Табло прилета:</p>
+  </div>
+
+{% for flight in master %}
+<div class="list-group">
+    <a href="{% url "flight" pk=flight.pk %}" class="list-group-item list-group-item-action">
+    <p align="center">
+        {{ flight.departure_airport }}
+        |
+        {{ flight.data }}
+        |
+        {{ flight.time }}
+    {% for  planes in flight.planes.all %}
+        | {{ planes.name }}
+    {% endfor %}
+    </p>
+    </a>
+</div>
+{% endfor %}
+
+<p></p>
+<p></p>
+
+<p align="center">Дальность полета</p>
+<div id="chart"></div>
+<p align="center">Количество мест</p>
+<div id="chart2"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="/static/js/c3.min.js"></script>
+<script>
+var chart2 = c3.generate({
+   bindto: '#chart',
+    data: {
+        columns: [
+            ['Airbus 320',"{{ plane1.flight_range}}" ],
+            ['Boeing 737-800', "{{ plane2.flight_range}}"],
+            ['Airbus 321', "{{ plane3.flight_range}}"],
+            ['Airbus 320neo', "{{ plane4.flight_range}}"]
+        ],
+        type: 'pie'
+    },
+    bar: {
+        width: {
+            ratio: 0.2
+        }
+    }
+});
+</script>
+
+<script>
+var chart2 = c3.generate({
+   bindto: '#chart2',
+    data: {
+        columns: [
+            ['Airbus 320',"{{ plane1.seats}}" ],
+            ['Boeing 737-800', "{{ plane2.seats}}"],
+            ['Airbus 321', "{{ plane3.seats}}"],
+            ['Airbus 320neo', "{{ plane4.seats}}"]
+        ],
+        type: 'bar'
+    },
+    bar: {
+        width: {
+            ratio: 0.2
+        }
+    }
+});
+  </script>
+
+</body>
+</html>
